@@ -14,7 +14,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://gv-plots-1.onrender.com//api/contact', formData);
+      const response = await axios.post('https://gv-plots-1.onrender.com/api/contact', formData);
       setAlert({ show: true, type: 'success', message: response.data.message });
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
