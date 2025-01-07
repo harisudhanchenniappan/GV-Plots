@@ -2,12 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Carousel, Button } from 'react-bootstrap';
 import tamilnagar from '../assets/tamilnagar.png';
 import rajaraninagar from '../assets/rajaraninagar.png';
-import consulting from '../assets/consulting.jpg';
-import farmhouse from '../assets/farmhouse.jpg';
-import villa from '../assets/villa.jpg';
-import investment from '../assets/investment.jpg';
-import plots from '../assets/plots.jpg';
-
+import a1 from '../assets/a1.jpg'
+import a2 from '../assets/a2.jpg'
+import a3 from '../assets/a3.jpg'
+import a4 from '../assets/a4.jpg'
 
 const HeroSection = () => {
   const [index, setIndex] = useState(0);
@@ -41,7 +39,7 @@ const HeroSection = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={consulting}
+            src={a1}
             alt="First slide"
             style={{ height: '80vh', objectFit: 'cover' }}
           />
@@ -49,7 +47,7 @@ const HeroSection = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={villa}
+            src={a3}
             alt="Second slide"
             style={{ height: '80vh', objectFit: 'cover' }}
           />
@@ -57,7 +55,7 @@ const HeroSection = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={investment}
+            src={a2}
             alt="Third slide"
             style={{ height: '80vh', objectFit: 'cover' }}
           />
@@ -65,19 +63,12 @@ const HeroSection = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={plots}
+            src={a4}
             alt="Fourth slide"
             style={{ height: '80vh', objectFit: 'cover' }}
           />
         </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={farmhouse}
-            alt="Fifth slide"
-            style={{ height: '80vh', objectFit: 'cover' }}
-          />
-        </Carousel.Item>
+       
       </Carousel>
 
       {/* Hero Content Below the Image Slider */}
