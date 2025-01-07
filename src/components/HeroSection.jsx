@@ -6,6 +6,7 @@ import a1 from '../assets/a1.jpg'
 import a2 from '../assets/a2.jpg'
 import a3 from '../assets/a3.jpg'
 import a4 from '../assets/a4.jpg'
+import a5 from '../assets/a5.jpg'
 
 const HeroSection = () => {
   const [index, setIndex] = useState(0);
@@ -64,6 +65,15 @@ const HeroSection = () => {
           <img
             className="d-block w-100"
             src={a4}
+            alt="Fourth slide"
+            style={{ height: '80vh', objectFit: 'cover' }}
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={a5}
             alt="Fourth slide"
             style={{ height: '80vh', objectFit: 'cover' }}
           />
